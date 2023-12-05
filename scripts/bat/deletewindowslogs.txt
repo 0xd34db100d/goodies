@@ -1,4 +1,5 @@
 Logs: for /F "tokens=*" %1 in ('wevtutil.exe el') DO wevtutil.exe cl "%1"
 Logs: powershell -Command "Get-EventLog -LogName * | ForEach { Clear-EventLog $_.Log }"
+Tips: Alt + F7 Delete history in cmd window.
 History powershell path: %APPDATA%\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 
